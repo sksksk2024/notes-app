@@ -15,7 +15,7 @@ const AuthScreen = () => {
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState(false);
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [isRegistering, setIsRegistering] = useState(false);
   const [error, setError] = useState(false);
 
@@ -57,7 +57,7 @@ const AuthScreen = () => {
         placeholder="Email"
         placeholderTextColor="#aaa"
         value={email}
-        onChange={setEmail}
+        onChangeText={setEmail}
         autoCapitalize="none"
         keyboardType="email-address"
       />
@@ -67,7 +67,7 @@ const AuthScreen = () => {
         placeholder="Password"
         placeholderTextColor="#aaa"
         value={password}
-        onChange={setPassword}
+        onChangeText={setPassword}
         secureTextEntry
         textContentType="none"
       />
@@ -78,7 +78,7 @@ const AuthScreen = () => {
           placeholder="Confirm Password"
           placeholderTextColor="#aaa"
           value={confirmPassword}
-          onChange={setConfirmPassword}
+          onChangeText={setConfirmPassword}
           secureTextEntry
           textContentType="none"
         />

@@ -1,4 +1,11 @@
-import { Modal, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import {
+  Modal,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+  StyleSheet,
+} from 'react-native';
 
 const AddNoteModal = ({
   modalVisible,
